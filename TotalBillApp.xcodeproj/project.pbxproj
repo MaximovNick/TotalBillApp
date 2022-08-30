@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		ADA8C27A28BE9BD4000C11C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C27928BE9BD4000C11C9 /* AppDelegate.swift */; };
 		ADA8C27C28BE9BD4000C11C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C27B28BE9BD4000C11C9 /* SceneDelegate.swift */; };
-		ADA8C27E28BE9BD4000C11C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C27D28BE9BD4000C11C9 /* ViewController.swift */; };
-		ADA8C28128BE9BD4000C11C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA8C27F28BE9BD4000C11C9 /* Main.storyboard */; };
+		ADA8C27E28BE9BD4000C11C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C27D28BE9BD4000C11C9 /* MainViewController.swift */; };
 		ADA8C28328BE9BD6000C11C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA8C28228BE9BD6000C11C9 /* Assets.xcassets */; };
 		ADA8C28628BE9BD6000C11C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA8C28428BE9BD6000C11C9 /* LaunchScreen.storyboard */; };
+		ADA8C28E28BEA80D000C11C9 /* TotalBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */; };
+		ADA8C29028BEAE1F000C11C9 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADA8C27628BE9BD4000C11C9 /* TotalBillApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalBillApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA8C27928BE9BD4000C11C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA8C27B28BE9BD4000C11C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADA8C27D28BE9BD4000C11C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADA8C28028BE9BD4000C11C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA8C27D28BE9BD4000C11C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADA8C28228BE9BD6000C11C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA8C28528BE9BD6000C11C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADA8C28728BE9BD6000C11C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBillView.swift; sourceTree = "<group>"; };
+		ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				ADA8C27928BE9BD4000C11C9 /* AppDelegate.swift */,
 				ADA8C27B28BE9BD4000C11C9 /* SceneDelegate.swift */,
-				ADA8C27D28BE9BD4000C11C9 /* ViewController.swift */,
-				ADA8C27F28BE9BD4000C11C9 /* Main.storyboard */,
+				ADA8C27D28BE9BD4000C11C9 /* MainViewController.swift */,
+				ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */,
+				ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */,
 				ADA8C28228BE9BD6000C11C9 /* Assets.xcassets */,
 				ADA8C28428BE9BD6000C11C9 /* LaunchScreen.storyboard */,
 				ADA8C28728BE9BD6000C11C9 /* Info.plist */,
@@ -127,7 +130,6 @@
 			files = (
 				ADA8C28628BE9BD6000C11C9 /* LaunchScreen.storyboard in Resources */,
 				ADA8C28328BE9BD6000C11C9 /* Assets.xcassets in Resources */,
-				ADA8C28128BE9BD4000C11C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA8C27E28BE9BD4000C11C9 /* ViewController.swift in Sources */,
+				ADA8C29028BEAE1F000C11C9 /* PersonView.swift in Sources */,
+				ADA8C28E28BEA80D000C11C9 /* TotalBillView.swift in Sources */,
+				ADA8C27E28BE9BD4000C11C9 /* MainViewController.swift in Sources */,
 				ADA8C27A28BE9BD4000C11C9 /* AppDelegate.swift in Sources */,
 				ADA8C27C28BE9BD4000C11C9 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADA8C27F28BE9BD4000C11C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADA8C28028BE9BD4000C11C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADA8C28428BE9BD6000C11C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +288,7 @@
 				INFOPLIST_FILE = TotalBillApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +300,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +316,7 @@
 				INFOPLIST_FILE = TotalBillApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
