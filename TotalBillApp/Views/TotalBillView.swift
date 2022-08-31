@@ -48,6 +48,7 @@ class TotalBillView: UIView {
         addSubview(someTextField)
     }
     
+    // MARK: - set constraints
     func setConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 0),

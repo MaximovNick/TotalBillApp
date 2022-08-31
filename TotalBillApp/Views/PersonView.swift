@@ -73,6 +73,7 @@ class PersonView: UIView {
         
     }
     
+    // MARK: - set constraints
     func setConstraints() {
         NSLayoutConstraint.activate([
             

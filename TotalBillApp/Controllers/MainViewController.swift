@@ -51,6 +51,7 @@ class MainViewController: UIViewController {
     
     let totalBillView = TotalBillView()
     let personView = PersonView()
+    let tipsView = TipsView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,9 +68,11 @@ class MainViewController: UIViewController {
         view.addSubview(totalBillView)
         view.addSubview(personView)
         view.addSubview(calculateButton)
+        view.addSubview(tipsView)
     }
 }
 
+// MARK: - set constraints
 extension MainViewController {
     
     func setConstraints() {
@@ -96,10 +99,15 @@ extension MainViewController {
             personView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             personView.heightAnchor.constraint(equalToConstant: 130),
             
-            calculateButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            tipsView.topAnchor.constraint(equalTo: personView.bottomAnchor, constant: 10),
+            tipsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            tipsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            tipsView.heightAnchor.constraint(equalToConstant: 130),
+            
+            calculateButton.topAnchor.constraint(equalTo: tipsView.bottomAnchor, constant: 5),
             calculateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             calculateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            calculateButton.heightAnchor.constraint(equalToConstant: 60)
+            calculateButton.heightAnchor.constraint(equalToConstant: 60),
             
         ])
     }

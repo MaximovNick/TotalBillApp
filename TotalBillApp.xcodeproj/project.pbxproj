@@ -14,6 +14,8 @@
 		ADA8C28628BE9BD6000C11C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA8C28428BE9BD6000C11C9 /* LaunchScreen.storyboard */; };
 		ADA8C28E28BEA80D000C11C9 /* TotalBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */; };
 		ADA8C29028BEAE1F000C11C9 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */; };
+		ADDC3DED28BF759B006A9B63 /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC3DEC28BF759B006A9B63 /* TipsCollectionViewCell.swift */; };
+		ADDC3DF328BF79B1006A9B63 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC3DF228BF79B1006A9B63 /* TipsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		ADA8C28728BE9BD6000C11C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBillView.swift; sourceTree = "<group>"; };
 		ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		ADDC3DEC28BF759B006A9B63 /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADDC3DF228BF79B1006A9B63 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,50 @@
 		ADA8C27828BE9BD4000C11C9 /* TotalBillApp */ = {
 			isa = PBXGroup;
 			children = (
-				ADA8C27928BE9BD4000C11C9 /* AppDelegate.swift */,
-				ADA8C27B28BE9BD4000C11C9 /* SceneDelegate.swift */,
-				ADA8C27D28BE9BD4000C11C9 /* MainViewController.swift */,
-				ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */,
-				ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */,
+				ADDC3DF028BF75CB006A9B63 /* Views */,
+				ADDC3DEF28BF75B6006A9B63 /* Controllers */,
+				ADDC3DEE28BF75A4006A9B63 /* Applications */,
 				ADA8C28228BE9BD6000C11C9 /* Assets.xcassets */,
 				ADA8C28428BE9BD6000C11C9 /* LaunchScreen.storyboard */,
 				ADA8C28728BE9BD6000C11C9 /* Info.plist */,
 			);
 			path = TotalBillApp;
+			sourceTree = "<group>";
+		};
+		ADDC3DEE28BF75A4006A9B63 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				ADA8C27928BE9BD4000C11C9 /* AppDelegate.swift */,
+				ADA8C27B28BE9BD4000C11C9 /* SceneDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		ADDC3DEF28BF75B6006A9B63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADA8C27D28BE9BD4000C11C9 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADDC3DF028BF75CB006A9B63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC3DF128BF7889006A9B63 /* Cells */,
+				ADA8C28D28BEA80D000C11C9 /* TotalBillView.swift */,
+				ADA8C28F28BEAE1F000C11C9 /* PersonView.swift */,
+				ADDC3DF228BF79B1006A9B63 /* TipsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADDC3DF128BF7889006A9B63 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC3DEC28BF759B006A9B63 /* TipsCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +181,8 @@
 				ADA8C29028BEAE1F000C11C9 /* PersonView.swift in Sources */,
 				ADA8C28E28BEA80D000C11C9 /* TotalBillView.swift in Sources */,
 				ADA8C27E28BE9BD4000C11C9 /* MainViewController.swift in Sources */,
+				ADDC3DF328BF79B1006A9B63 /* TipsView.swift in Sources */,
+				ADDC3DED28BF759B006A9B63 /* TipsCollectionViewCell.swift in Sources */,
 				ADA8C27A28BE9BD4000C11C9 /* AppDelegate.swift in Sources */,
 				ADA8C27C28BE9BD4000C11C9 /* SceneDelegate.swift in Sources */,
 			);
