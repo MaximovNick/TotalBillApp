@@ -62,9 +62,9 @@
 		ADA8C27828BE9BD4000C11C9 /* TotalBillApp */ = {
 			isa = PBXGroup;
 			children = (
-				ADDC3DF028BF75CB006A9B63 /* Views */,
-				ADDC3DEF28BF75B6006A9B63 /* Controllers */,
 				ADDC3DEE28BF75A4006A9B63 /* Applications */,
+				ADDC3DEF28BF75B6006A9B63 /* Controllers */,
+				ADDC3DF028BF75CB006A9B63 /* Views */,
 				ADA8C28228BE9BD6000C11C9 /* Assets.xcassets */,
 				ADA8C28428BE9BD6000C11C9 /* LaunchScreen.storyboard */,
 				ADA8C28728BE9BD6000C11C9 /* Info.plist */,

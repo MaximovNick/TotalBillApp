@@ -29,6 +29,8 @@ class PersonView: UIView {
     lazy var minusButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "minus.rectangle.fill"), for: .normal)
+        button.addTarget(self, action: #selector(minusButtonTapped), for: .touchUpInside)
+        button.isEnabled = false
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -37,6 +39,7 @@ class PersonView: UIView {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "plus.rectangle.fill"), for: .normal)
         button.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -50,6 +53,8 @@ class PersonView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    var counter = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -70,6 +75,23 @@ class PersonView: UIView {
         backgroundGrayView.addSubview(minusButton)
         backgroundGrayView.addSubview(plusButton)
         backgroundGrayView.addSubview(counterLabel)
+        
+    }
+    
+    @objc func minusButtonTapped() {
+        
+        counter -= 1
+        counterLabel.text = "\(counter)"
+        
+        if counter == 0 {
+            minusButton.isEnabled = false
+        }
+    }
+    
+    @objc func plusButtonTapped() {
+        counter += 1
+        counterLabel.text = "\(counter)"
+        minusButton.isEnabled = true
         
     }
     

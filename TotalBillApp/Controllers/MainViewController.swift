@@ -45,6 +45,7 @@ class MainViewController: UIViewController {
         button.tintColor = .white
         button.titleLabel?.font = UIFont(name: "Avenir Next", size: 20)
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(calculateButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -58,6 +59,7 @@ class MainViewController: UIViewController {
         
         setupViews()
         setConstraints()
+        addTap()
     }
     
     func setupViews() {
@@ -69,6 +71,33 @@ class MainViewController: UIViewController {
         view.addSubview(personView)
         view.addSubview(calculateButton)
         view.addSubview(tipsView)
+    }
+    
+    @objc func calculateButtonTapped() {
+        guard let totalBill = totalBillView.summTextField.text else { return }
+        guard let totalBillInt = Int(totalBill) else { return }
+        
+        let summ = totalBillInt + totalBillInt * tipsView.tipsCount / 100
+        
+        if personView.counter == 0 {
+            descriptionLabel.text = "Enter persons count"
+            descriptionLabel.textColor = .red
+        } else {
+            let result = summ / personView.counter
+            descriptionLabel.text = "\(result) per person"
+            descriptionLabel.textColor = .black
+        }
+    }
+    
+    // hiding the keyboard
+    func addTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
 }
 

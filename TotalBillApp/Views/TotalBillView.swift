@@ -18,10 +18,11 @@ class TotalBillView: UIView {
         return label
     }()
     
-    let someTextField: UITextField = {
+    let summTextField: UITextField = {
         let textField = UITextField()
         textField.textColor = .black
         textField.backgroundColor = #colorLiteral(red: 0.9561659694, green: 0.9591339231, blue: 0.9530903697, alpha: 1)
+        textField.tintColor = #colorLiteral(red: 0.639077723, green: 0.2492567599, blue: 0.6254395843, alpha: 1)
         textField.layer.cornerRadius = 10
         textField.font = UIFont(name: "Avenir Next Bold", size: 48)
         textField.textAlignment = .center
@@ -45,7 +46,7 @@ class TotalBillView: UIView {
         
         translatesAutoresizingMaskIntoConstraints = false
         addSubview(titleLabel)
-        addSubview(someTextField)
+        addSubview(summTextField)
     }
     
     // MARK: - set constraints
@@ -54,10 +55,10 @@ class TotalBillView: UIView {
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 0),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             
-            someTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 2),
-            someTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-            someTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            someTextField.heightAnchor.constraint(equalToConstant: 100)
+            summTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 2),
+            summTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            summTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+            summTextField.heightAnchor.constraint(equalToConstant: 100)
             
         ])
     }
