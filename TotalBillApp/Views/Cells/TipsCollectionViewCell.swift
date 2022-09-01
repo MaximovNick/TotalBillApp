@@ -13,7 +13,6 @@ class TipsCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "10"
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        label.font = UIFont(name: "Avenir Next Bold", size: 24)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -39,6 +38,11 @@ class TipsCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        procentLabel.font = UIFont(name: "Avenir Next Bold", size: frame.height / 3.4)
     }
     
     func setupView() {
