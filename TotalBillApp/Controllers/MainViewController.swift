@@ -100,7 +100,7 @@ class MainViewController: UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-
+    
     @objc func hideKeyboard() {
         view.endEditing(true)
     }
@@ -110,39 +110,51 @@ class MainViewController: UIViewController {
 extension MainViewController {
     
     func setConstraints() {
+        
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            
+        ])
+        
+        NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.widthAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.23),
             logoImageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.23),
-            
+        ])
+        
+        NSLayoutConstraint.activate([
             descriptionLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 15),
             descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            
+        ])
+        
+        NSLayoutConstraint.activate([
             totalBillView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 5),
             totalBillView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             totalBillView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             totalBillView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.14),
-            
+        ])
+        
+        NSLayoutConstraint.activate([
             personView.topAnchor.constraint(equalTo: totalBillView.bottomAnchor, constant: 5),
             personView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             personView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             personView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.14),
-            
+        ])
+        
+        NSLayoutConstraint.activate([
             tipsView.topAnchor.constraint(equalTo: personView.bottomAnchor, constant: 10),
             tipsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             tipsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             tipsView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.14),
-            
+        ])
+        
+        NSLayoutConstraint.activate([
             calculateButton.topAnchor.constraint(equalTo: tipsView.bottomAnchor, constant: 15),
             calculateButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             calculateButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             calculateButton.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.06),
-            
         ])
     }
 }
